@@ -1,0 +1,165 @@
+/* Font Awesome  */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Common style  */
+body{
+    background-color: #F3F1FF;;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 27px;
+}
+.container.part-1{
+    margin-top: 36px;
+}
+.container.part-2{
+    margin-top: 21px;
+}
+/* Top Players Styles Start */
+.top-players{
+    margin-bottom: 21px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.section-title{
+    color: #4a4368;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 3px;   
+    padding-left: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+.player-name{
+    padding: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+/* Top Players Styles End  */
+/* ---------------------------------------
+Top Blogs Styles Start
+------------------------------------------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 26px;
+}
+.blog{
+    display: flex;
+    
+}
+.blog .thubnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    padding-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-info a{
+    text-decoration: none;
+    font-size: 16px;
+}
+/* Top Blogs Styles End */
+/* Courses Style Start  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 26px;
+}
+.course{
+    width: 252.42px;
+    height: 269.79px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
+.course-banner img{
+    width: 224.38px;
+    height: 105.51px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    width: 12.39px;
+    height: 11.81px;
+}
+.fa-star.filled{
+    color:#FFC014;
+}
+.fa-star.empty{
+   color: #AEAEAE; 
+}
+.fa-clock{
+    width: 20.03px;
+    height: 20.03px;
+}
+.course-durition{
+    width: 94.83px; 
+    height: 29.38px;
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 5px;
+}
+/* Courses Styles End  */
+/*---------------------- Media Quraries Part Styles -----------------*/
+/* --------------------Mobile Device---------------------- */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+         grid-template-columns: repeat(1,1fr);
+    }
+    .blog{
+        padding: 20px;}
+    .course{
+        padding: 20px;
+        }
+        .player, .blog{
+        flex-direction: column;
+    }
+    .blog-info{
+        padding-left: 0;
+    }
+    .section-title{
+        display: flex;
+        align-items: center ;
+    }
+}
+/* mobile devices end */
+/*------------------------------- Tablet Devices -----------------------------*/
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .blogs, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .players{
+         grid-template-columns: repeat(2,1fr);
+    }
+}
+/* tablet devices end */
